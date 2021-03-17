@@ -1,0 +1,113 @@
+body {
+    background-image: url(img/bgr/bgr3.png);
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    border-bottom: 2px powderblue solid;
+    top: 0;
+    height: 70px;
+    width: 100%;
+}
+
+#headerLogo {
+    position: relative;
+    display: flex;
+    top: -30%;
+    left: 150px;
+    width: 110px;
+    height: auto;
+}
+
+#mainContainer {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 80px;
+}
+
+#nameContainer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px silver inset;
+    padding: 5px 20px;
+}
+
+#name {
+    color: silver;
+    font-family: Cairo;
+    font-weight: lighter;
+    font-size: 50px;
+    float: left;
+    margin-right: 5px;
+}
+
+#lastname {
+    color: powderblue;
+    margin-left: 5px;
+    font-family: Cairo;
+    font-weight: bolder;
+    font-size: 50px;
+    float: left;
+}
+
+#socialMedia {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 35%;
+    width: 30%;
+    top: 55%;
+    height: 50px;
+}
+
+#socialMedia #linkedinLogo,
+#socialMedia #githubLogo,
+#socialMedia #mailLogo,
+#socialMedia #resumeLogo {
+    margin: 0 20px;
+    width: 10%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+#socialMedia #linkedinLogo :hover {
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+
+#socialMedia #githubLogo :hover {
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+
+#socialMedia #mailLogo :hover {
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+
+#socialMedia #resumeLogo :hover {
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animationfadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
