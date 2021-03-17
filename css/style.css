@@ -35,13 +35,24 @@ header {
     top: 80px;
 }
 
+#profilePhoto {
+    position: relative;
+    display: flex;
+    left: 42%;
+    top: 100px;
+    border-radius: 100px;
+}
+
 #nameContainer {
-    position: absolute;
-    top: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    width: 30%;
+    height: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-bottom: 1px silver inset;
-    padding: 5px 20px;
 }
 
 #name {
@@ -54,7 +65,7 @@ header {
 }
 
 #lastname {
-    color: powderblue;
+    color: rgb(88, 136, 224);
     margin-left: 5px;
     font-family: Cairo;
     font-weight: bolder;
@@ -68,7 +79,7 @@ header {
     justify-content: center;
     left: 35%;
     width: 30%;
-    top: 55%;
+    top: 50%;
     height: 50px;
 }
 
